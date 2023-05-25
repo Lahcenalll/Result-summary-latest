@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Hanken Grotes;
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+@import url(https://fonts.google.com/specimen/Hanken+Grotesk);
+body {
+  height: 100vh;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Hanken Grotes;
+  font-size: 18px;
+}
+
+/* {} */
+/* 375px mobile width */
+
+main {
+  background-color: white;
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* here starts purple section  */
+
+.purple,
+.white {
+  position: relative;
+  /* width: 325px; */
+  max-width: 100%;
+  height: 430px;
+  border-radius: 0 0 30px 30px;
+  padding: 40px 40px 0 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.inpurple {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.result {
+  position: relative;
+  font-weight: bold;
+  font-size: 120%;
+  color: rgb(236, 234, 243);
+}
+
+.purple {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(241, 100%, 89%);
+}
+
+.circle {
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  color: rgb(166, 167, 168);
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.circle span {
+  font-weight: bold;
+  color: white;
+  font-size: 400%;
+}
+.great {
+  font-weight: bold;
+  color: white;
+  font-size: 190%;
+}
+
+/* here starts white section */
+
+.inwhite {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#summary {
+  position: relative;
+  font-weight: bold;
+  font-size: 120%;
+  color: hsl(224, 30%, 27%);
+}
+
+.box {
+  width: 100%;
+  background-color: hsl(0, 0%, 87%);
+  height: 50px;
+  margin: 12px 0 12px 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#one {
+  background-color: hsl(0, 100%, 67%, 0.07);
+}
+#two {
+  background-color: hsl(39, 100%, 56%, 0.07);
+}
+#three {
+  background-color: hsl(166, 100%, 37%, 0.07);
+}
+#four {
+  background-color: hsl(234, 85%, 45%, 0.07);
+}
+
+.number {
+  position: absolute;
+  right: 15px;
+  color: hsl(225, 17%, 45%);
+}
+
+button {
+  background-color: hsl(224, 30%, 27%);
+  border: none;
+  color: white;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 35px;
+  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+img {
+  padding: 0 15px 0 10px;
+}
+
+/* This is responsive  */
+
+@media screen and (min-width: 912px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  main {
+    min-width: 100%;
+    min-width: 650px;
+    max-height: 520px;
+    flex-direction: row;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.1);
+  }
+  .purple,
+  .white {
+    position: relative;
+    width: 325px;
+    height: 470px;
+    border-radius: 30px;
+    padding: 50px 40px 0 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #four {
+    margin-bottom: 40px;
+  }
+  .result {
+    margin-bottom: 10px;
+  }
+}
